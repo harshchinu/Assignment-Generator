@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+<form action='' method="POST" enctype="multipart/form-data">
+    <p>
+        <h3>practical type  </h3>
+        <input type="radio" name="type" value="practical">gtu</input>
+        <input type="radio" name="type" value="extrapractical">extra</input>
+        <br>
+        <h3>practical No    </h3>
+
+        <select name="prlist">
+            {% for x in prlist %}
+            <option value="{{x}}">{{x}}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <input type='file' name='file[]' multiple=''>
+        <input type='submit' value='upload'>
+    </p>
+</form>
+</body></html>
